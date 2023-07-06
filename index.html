@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
   </head>
@@ -13,17 +16,24 @@
 </html>
 <script>
 
-
+function changeColors(oldColor, newColor, element){
+      element.classList.replace(`${oldColor}`,`${newColor}`)
+      
+}
 
   document.addEventListener("scroll", function() {
     const nav = document.getElementById('nav');
+    const title = document.getElementById('shop')
     if (window.pageYOffset>100){
       nav.classList.replace("bg-gray-500","bg-white")
       nav.classList.add('fixed')
+      changeColors("text-yellow-50","text-black", title)
     }else{
       nav.classList.replace("bg-white","bg-gray-500")
       nav.classList.remove('fixed')
+      changeColors("text-black","text-yellow-50", title)
     }
  
 } )
 </script>
+

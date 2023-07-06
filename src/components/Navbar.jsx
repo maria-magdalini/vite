@@ -1,27 +1,27 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import NavbarMenu from "./NavbarMenu"
+import NavMenu from "./NavMenu"
+import "./Scripts"
 
 function Navbar(){
 return (
     <>
-        <div id="nav" className="w-full flex items-center 
+        <div id="nav" className="w-full flex items-center font-['Acme']
         transition duration-300 ease-out justify-around bg-gray-500 h-[100px]">
-            <div className=" bg-black ">
-                <p className="text-yellow-50">Hello World</p>
+            <div className="">
+                <p className="text-yellow-50 text-[20px]" id='shop'>Samurai's Shop</p>
             </div>
-            <div className=" bg-gray-400" onClick={(e)=> this.classList.add("bg-blue")}>
-             <ul>
-              <li key='1'>
-               <a href="/" >Link</a>
-              </li>
-             </ul>
+            <div className=" h-[100px] w-[50px] right-0  top-0 absolute"  id="burger">
+             <span className="w-6 h-[3px] rounded-md mt-10 absolute  bg-black "></span>
+             <span className="w-6 h-[3px] rounded-md mt-12 m-auto absolute  bg-blue-800 "></span>
+             <span className="w-6 h-[3px] rounded-md mt-14 m-auto absolute  bg-red-600 "></span>
+            
 
                 
             </div>
         
         </div>
-        <NavbarMenu />
+        
     </>
 )
 }
