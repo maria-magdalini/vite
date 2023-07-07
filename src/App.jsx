@@ -1,5 +1,6 @@
 import { useState } from 'react'
-
+import { Transition } from '@headlessui/react'
+import { Fragment } from 'react'
 import './App.css'
 import Hero from './components/Hero'
 import Navbar from "./components/Navbar"
@@ -13,7 +14,10 @@ function App() {
     <>
       <div className=' w-full'>
         <Navbar/>
-        <NavMenu />
+   
+
+        
+        
         <Hero/>
         <Some />
       </div>

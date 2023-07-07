@@ -33,7 +33,7 @@ products
         <div className="h-full flex flex-col justify-center items-center gap-10">
         <button className="w-max h-max p-2 mt-10 bg-slate-50 rounded-md font-['Acme']" onClick={products}>Show Products</button>
         { (isLoading) ? <div className="w-10 h-10 animate-spin justify-center
-        flex items-center hue-rotate-0 bg-fuchsia-200 m-auto rounded-full"></div>
+        flex items-center hue-rotate-0 bg-transparent m-auto rounded-full"></div>
         
         :( 
         <div className=" w-full">
