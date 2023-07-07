@@ -14,7 +14,7 @@ function NavMenu({show, className}) {
   return (
     <>
 
-      <div className='absolute  transition z-30 top-[100px] duration-1000 ease-in-out ' id='menuCnt' data-toogled=''>
+      <div className='absolute  transition z-30 top-[100px]  left-0 duration-1000 ease-in-out ' id='menuCnt' data-toogled=''>
         <Transition
         show={show}
         enter="transition-opacity  duration-350"
