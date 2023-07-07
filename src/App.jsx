@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-      <div className='h-[100vh] w-full'>
+      <div className=' w-full'>
         <Navbar/>
         <NavMenu />
         <Hero/>
