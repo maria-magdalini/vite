@@ -1,11 +1,14 @@
 import React,{useState, useEffect} from "react";
 import { json } from "react-router-dom";
 
+import Modal from "./Modal";
 
 
 function Products(){
   const [data, setData] = useState([])
   const [isLoading, setIsLoading] = useState(true);
+
+
   const products = async()=>{
    try{
     const res = await fetch("https://fakestoreapi.com/products")
@@ -46,8 +49,12 @@ products
                   <div className="flex flex-col">
                     <span>Sales: {data.rating.count}</span>
                     <span>Rating: {data.rating.rate}</span>
+                    <Modal data={data}/>
                   </div>
-
+                  <div className=" text-black w-full">
+                 
+                    
+                  </div>
                 
                   
 
@@ -58,9 +65,7 @@ products
         ))}
           </div>
           
-          <div className="h-1/4  w-full">
           
-          </div>
         </div> )
         }
 
