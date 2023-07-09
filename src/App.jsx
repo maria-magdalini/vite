@@ -6,6 +6,7 @@ import Hero from './components/Hero'
 import Navbar from "./components/Navbar"
 import NavMenu from './components/NavMenu'
 import Some from './components/Some'
+import Footer from './components/Footer'
 function App() {
   const [count, setCount] = useState(0)
  
@@ -20,6 +21,7 @@ function App() {
         
         <Hero/>
         <Some />
+        <Footer/>
       </div>
     </>
   )
