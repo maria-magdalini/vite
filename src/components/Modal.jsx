@@ -11,7 +11,8 @@ function Modal({data}) {
   return (
     <>
     <div className="flex flex-col items-center ">
-    <button onClick={setState}>
+    <button onClick={setState} className='bg-slate-200 p-2 text-center text-sm
+  hover:bg-slate-500 hover:text-white font-["Segoe UI"]  rounded-lg'>
     Show More
     </button>
         <Transition as='Fragment'

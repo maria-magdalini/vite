@@ -47,8 +47,8 @@ products
                   <span className="absolute top-0 left-[-25px] text-[13px] p-1 bg-green-400 rounded-sm text-white font-['Helvetica] font-semibold">{data.category}</span>
                   <h3>Price: {data.price}</h3>
                   <div className="flex flex-col">
-                    <span>Sales: {data.rating.count}</span>
-                    <span>Rating: {data.rating.rate}</span>
+                    <span className="text-sm">Sales: {data.rating.count}</span>
+                    <span className="text-sm">Rating: {data.rating.rate}</span>
                     <Modal data={data}/>
                   </div>
                   <div className=" text-black w-full">
