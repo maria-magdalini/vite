@@ -29,10 +29,10 @@ function Carousel() {
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}
     >
-      <SwiperSlide className=' '><img className='object-center h-full w-full sm:object-scale-down object-cover' alt='Image 1' src='src\assets\images\1.jpg'/></SwiperSlide>
-      <SwiperSlide className=' '><img className='object-center h-full w-full sm:object-scale-down object-cover' alt='Image 2' src='src\assets\images\2.jpg'/></SwiperSlide>
-      <SwiperSlide className=' '><img className='object-center h-full w-full sm:object-scale-down object-cover' alt='Image 3' src='src\assets\images\3.jpg'/></SwiperSlide>
-      <SwiperSlide className=' '><img className='object-center h-full w-full sm:object-scale-down object-cover' alt='Image 4' src='src\assets\images\4.jpg'/></SwiperSlide>
+      <SwiperSlide className=' '><img className='object-center h-full w-full sm:object-scale-down object-cover'  src="../assets/images/1.jpg"/></SwiperSlide>
+      <SwiperSlide className=' '><img className='object-center h-full w-full sm:object-scale-down object-cover'  src='src\assets\images\2.jpg'/></SwiperSlide>
+      <SwiperSlide className=' '><img className='object-center h-full w-full sm:object-scale-down object-cover'  src='src\assets\images\3.jpg'/></SwiperSlide>
+      <SwiperSlide className=' '><img className='object-center h-full w-full sm:object-scale-down object-cover'  src='src\assets\images\4.jpg'/></SwiperSlide>
       ...
     </Swiper>
     
